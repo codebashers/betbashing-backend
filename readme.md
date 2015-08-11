@@ -23,3 +23,21 @@ Documentation for the entire framework can be found on the [Laravel website](htt
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+## Installation
+
+### Backend
+
+1. Create a new database with a name of your choice.
+
+2. Adjust the database connection settings in:
+'app/config/database.php'
+
+3. Run the migration files at the root of the project folder via Terminal:
+'php artisan migrate'
+
+4. Run the Seeder for having data inside your database tables:
+'php artisan db:seed'
+
+5. Optionally you can run the built-in Laravel Server which will be serving backend data at http://localhost:8000 by default:
+'php artisan serve'
