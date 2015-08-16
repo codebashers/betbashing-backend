@@ -17,4 +17,6 @@ Route::get('/', function()
 });
 
 
+Route::get('matchday', 'MatchdayController@index');
 Route::resource('users', 'UserController');
+Route::resource('bets', 'BetController');

@@ -16,6 +16,7 @@ class CreateUsersTable extends Migration {
     {
       $table->increments('id');
       $table->string('username', 16)->unique();
+			$table->integer('points')->default(0);
       $table->string('firstname', 32)->nullable();
       $table->string('lastname', 32)->nullable();
       $table->string('email', 48)->unique();
